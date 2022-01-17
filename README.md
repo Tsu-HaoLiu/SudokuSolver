@@ -36,7 +36,7 @@ sudoku_solved = sudoku.solve()
 
 # You can also directly add the board and method to the class
 sudoku = SudokuCore(test_board, "recursion")
-sudoku_solved = sudoku.solved_board
+sudoku_solved = sudoku.solved_board()
 ```
 Printing the board: `print("board:", *sudoku_solved, sep="\n")`
 ```python
