@@ -58,7 +58,6 @@ class SudokuCore:
         self.emptyboard = [[0] * 9 for _ in range(9)]
         self.board = self.addboard(board) if isinstance(board, list) else None
         self.method = self.setmethod(method) if isinstance(method, str) else "recursion"
-        self.solved_board = self.board
         self.on_init()
 
     def on_init(self):
