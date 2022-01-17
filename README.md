@@ -66,6 +66,7 @@ solved_board = sudoku.solved_board
 If you are looking for speed I recommend using the `sorted_recursion` method to solve your sudoku boards faster. This is because it is first pre-scanning all positions and possible numbers on the board, instead of going through all possible combinations like in `recursion`. (Times are dependent on difficulty and how fast your computer can process)
 **Here are some stats after ~50 solves:**
 > recursion avg: 20.5283s
+> 
 > sorted_recursion avg: 7.2337s
 
 ## Development
