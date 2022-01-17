@@ -1,8 +1,6 @@
 # SudokuSolver
 ## _The Simplest Sudoku Solver_
 
----
-
 SudokuSolver can both solve and generate sudoku boards and is powered by Python.
 
 - This program can easily solve difficult sudoku puzzles!
@@ -10,7 +8,7 @@ SudokuSolver can both solve and generate sudoku boards and is powered by Python.
 
 
 # How do I use this baby?!
----
+
 ```python
 test_board = [
     [0, 3, 0, 0, 8, 0, 0, 0, 6],
