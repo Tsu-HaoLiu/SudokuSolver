@@ -56,7 +56,7 @@ board:
 # It's quick and easy
 sudoku = SudokuCore()
 
-# Difficulty `beginner` (default), `easy`, `medium`, `hard`, `extreme`, `evil`
+# Difficulty `beginner` (default), `easy`, `medium`, `hard`, `extreme`
 unsolved_board = sudoku.generate("medium")
 
 # You can also get the solved board :O
