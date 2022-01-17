@@ -156,6 +156,9 @@ class SudokuCore:
         self.method = "generate"
         return self.remove_num(self.recursion(), dif)
 
+    def solved_board(self):
+        return self.board
+    
     def remove_num(self, board: list[list], dif: str) -> list[list]:
         """A function to remove numbers from the fully solved sudoku board depending on difficulty
 
