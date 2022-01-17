@@ -1,5 +1,5 @@
 # SudokuSolver
-## _The Simplest Sudoku Solver_
+### _The Simplest Sudoku Solver_
 
 SudokuSolver can both solve and generate sudoku boards and is powered by Python.
 
