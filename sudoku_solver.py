@@ -127,7 +127,7 @@ class SudokuCore:
         :return: Nothing
         """
 
-        if self.method == "generate":
+        if self.method == "generate" and not self.board:
             self.addboard(self.emptyboard)
             randomize_first_row = self.fixed_list.copy()
             random.shuffle(randomize_first_row)  # randomize a list 1-9
