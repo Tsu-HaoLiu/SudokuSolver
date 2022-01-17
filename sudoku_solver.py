@@ -1,3 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#----------------------------------------------------------------------------
+# Created Date: Sunday January 16 15:54:00 UTC 2022
+"""sudoku_solver.py: This is for solving and generating Sudoku puzzles"""
+#----------------------------------------------------------------------------
+
+__author__ = "Tsu-Hao Liu"
+__copyright__ = "Copyright 2022, SudokuSolver"
+
+__license__ = "MIT License"
+__version__ = "2022.1v6"
+
+# imports
 import random
 from copy import *
 
