@@ -204,9 +204,9 @@ class SudokuCore:
     def possible_positions(self):
         """This function scans the row -> column and finds all possible numbers that
         can fit in the empty square and save it in a list.
-
         [3, 8, [9, 2, 1], 7, 5, [4, 9, 2, 1], [2, 3, 6]]
-        :return:
+        
+        :return: Boolean `True` or `False` if board was solvable.
         """
         m = 0
         while m < 2:
