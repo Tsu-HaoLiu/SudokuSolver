@@ -48,7 +48,7 @@ class SudokuCore:
         self.on_init()
 
     def on_init(self):
-        # directly solve board if board and method are given on init
+        """Directly solve board if board and method are given on init"""
         if isinstance(self.board, list) and isinstance(self.method, str):
             return self.solve()
 
@@ -233,7 +233,6 @@ class SudokuCore:
             # try another loop to see if more numbers can be solved.
             if len(self.saved_position) != splength:
                 m = 0
-                splength = len(self.saved_position)
 
         self.fix_table()
         if self.sorted_recursion():
@@ -249,7 +248,6 @@ class SudokuCore:
         if self.method is None or self.board is None:
             raise ValueError("Board not initialized: addboard(list[list])")
 
-        solvable = False
         if self.method == "recursion":
             solvable = self.recursion()
         else:
@@ -262,4 +260,3 @@ class SudokuCore:
             raise Exception(f"This board can't be solved with [{self.method}] method")
 
         return self.board
-
