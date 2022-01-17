@@ -25,11 +25,14 @@ test_board = [
 ]
 
 sudoku = SudokuCore()
+
 # Add a sudoku board -> list[list]
 sudoku.addboard(test_board)
+
 # Set the method (currently only 2)
 sudoku.setmethod("sorted_recursion") # recursion, sorted_recursion
 sudoku_solved = sudoku.solve()
+
 
 # You can also directly add the board and method to the class
 sudoku = SudokuCore(test_board, "recursion")
@@ -52,8 +55,10 @@ board:
 ```python
 # It's quick and easy
 sudoku = SudokuCore()
+
 # Difficulty `beginner` (default), `easy`, `medium`, `hard`, `extreme`, `evil`
 unsolved_board = sudoku.generate("medium")
+
 # You can also get the solved board :O
 solved_board = sudoku.solved_board
 ```
