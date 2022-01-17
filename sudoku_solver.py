@@ -253,10 +253,7 @@ class SudokuCore:
         else:
             solvable = self.possible_positions()
 
-        print("board:", *self.board, sep="\n")
-        if solvable:
-            print(f"Sudoku solved with [{self.method}] method")
-        else:
+        if not solvable:
             raise Exception(f"This board can't be solved with [{self.method}] method")
 
         return self.board
