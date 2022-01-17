@@ -60,7 +60,7 @@ sudoku = SudokuCore()
 unsolved_board = sudoku.generate("medium")
 
 # You can also get the solved board :O
-solved_board = sudoku.solved_board
+solved_board = sudoku.solved_board()
 ```
 ### I am speeeeed
 If you are looking for speed I recommend using the `sorted_recursion` method to solve your sudoku boards faster. This is because it pre-scans all positions and possible numbers on the board, instead of going through all possible combinations like in `recursion`. (Times are dependent on difficulty and how fast your computer can process)
