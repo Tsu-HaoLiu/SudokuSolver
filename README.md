@@ -24,19 +24,15 @@ test_board = [
     [0, 0, 0, 0, 0, 6, 0, 8, 0]
 ]
 
-sudoku = SudokuCore()
+sudoku = SudokuBoard()
 
 # Add a sudoku board -> list[list]
-sudoku.addboard(test_board)
-
-# Set the method (currently only 2)
-sudoku.setmethod("sorted_recursion") # recursion, sorted_recursion
-sudoku_solved = sudoku.solve()
-
+sudoku.set_board(test_board)
+sudoku.solve()
 
 # You can also directly add the board and method to the class
-sudoku = SudokuCore(test_board, "recursion")
-sudoku_solved = sudoku.solved_board()
+sudoku = SudokuBoard(test_board)
+sudoku_solved = sudoku.solve()
 ```
 Printing the board: `print("board:", *sudoku_solved, sep="\n")`
 ```python
@@ -54,29 +50,16 @@ board:
 ### How do I generate a sudoku board?!?!?
 ```python
 # It's quick and easy
-sudoku = SudokuCore()
+sudoku = SudokuBoard()
 
 # Difficulty `beginner` (default), `easy`, `medium`, `hard`, `extreme`
-unsolved_board = sudoku.generate("medium")
-
-# You can also get the solved board :O
-solved_board = sudoku.solved_board()
+solved_board = sudoku.generate()
+scrambled_board = sudoku.scrambled_board('medium')
 ```
-### I am speeeeed
-If you are looking for speed I recommend using the `sorted_recursion` method to solve your sudoku boards faster. This is because it pre-scans all positions and possible numbers on the board, instead of going through all possible combinations like in `recursion`. (Times are dependent on difficulty and how fast your computer can process)
-**Here are some stats after ~50 solves:**
-> recursion avg: 20.5283s
-> 
-> sorted_recursion avg: 7.2337s
 
 ## Development
 
 Want to contribute or reivew my code? Great! I'm always looking for way to improve my code!
-
-
-## License
-
-[MIT License](https://github.com/Tsu-HaoLiu/SudokuSolver/blob/main/LICENSE)
 
 **Have Fun!**
 
